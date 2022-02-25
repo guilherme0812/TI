@@ -1,0 +1,54 @@
+/* Import Theme color*/
+@import url('./theme.css');
+
+.background-dark {
+    background-image: url('../img/background-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100vh;
+    padding: 0 1rem;
+    
+}
+nav .menu-content {
+    position: relative;
+}
+nav img#btn-menu {
+    cursor: pointer;
+    transition: .3s;
+}
+nav img#btn-menu:hover {
+    opacity: 0.7;
+}
+nav .apps-container {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+}
+@media only screen and (min-width: 768px) {
+    nav .apps-container {
+        position: absolute;
+        top: 43%;
+        right: 100px;
+        padding: 50px;
+        background-color: #fff;
+        border-radius: 10px;
+}
+
+ /* Header */
+img#img-logo-header {
+    width: 100px;
+}
+@media only screen and (min-width: 768px) {
+    img#img-logo-header {
+        width: 50%
+    }
+}
+
+.paragraph-header {
+    color: #ccc;
+}
