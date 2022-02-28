@@ -1,3 +1,3 @@
-(function exibirMensagem () {
-    console.log('Btn foi clicado')
-})()
+import Menu from "./Menu.js";
+
+Menu()

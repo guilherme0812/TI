@@ -6,49 +6,102 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* MENU */
 nav {
-    position: absolute;
-    right: 0px;
-    top: 0;
-    height: 100vh;
-    padding: 0 1rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: flex-end;
     
-}
-nav .menu-content {
-    position: relative;
-}
-nav img#btn-menu {
-    cursor: pointer;
-    transition: .3s;
-}
-nav img#btn-menu:hover {
-    opacity: 0.7;
 }
 nav .apps-container {
     position: absolute;
-    background-color: #fff;
+    top: 8%;
+    right: 0;
+    width: 90%;
+    margin: 0 2.5%;
+    padding:  5% 2.5% ;
+    background-color: rgba(255, 255, 255,1);
     border-radius: 10px;
+    z-index: 10;
 }
+
+
+nav img#btn-menu {
+    width: 30px;
+    margin: 1rem;
+}
+nav .app {
+    text-align: center;
+}
+nav .app img {display: block; margin: auto;}
+nav span {color: #454545; font-size: .75rem;}
+
 @media only screen and (min-width: 768px) {
+    /* Desktop */
+    nav {
+        position: absolute;
+        right: 0px;
+        top: 0;
+        height: 100vh;
+        padding: 0 1rem;
+        
+    }
+    nav .menu-content {
+        position: relative;
+    }
+    nav img#btn-menu {
+        cursor: pointer;
+        transition: .3s;
+        margin: 0;
+    }
+    nav img#btn-menu:hover {
+        opacity: 0.7;
+    }
     nav .apps-container {
         position: absolute;
-        top: 43%;
+        top: 33%;
         right: 100px;
-        padding: 50px;
-        background-color: #fff;
-        border-radius: 10px;
+        padding: 25px;
+        width: 200px;
+        height: 200px;
+        
+        
+    }
+    nav .apps-container img#poligon {
+        position: absolute;
+        top: 50%;
+        right: -7px;
+    }
 }
 
  /* Header */
 img#img-logo-header {
-    width: 100px;
+    width: 110px;
+    animation-name: logo-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    z-index: 1;
 }
+
+@keyframes logo-animation {
+    0%   {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+  }
+
 @media only screen and (min-width: 768px) {
     img#img-logo-header {
-        width: 50%
+        width: 70%
     }
 }
 
 .paragraph-header {
-    color: #ccc;
+    color: #ccc
 }
